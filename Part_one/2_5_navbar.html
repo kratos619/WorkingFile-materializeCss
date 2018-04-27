@@ -129,10 +129,10 @@
 
   <!-- STANDARD MENU -->
   <nav>
-    <div>
-      <div>
-        <a href="#">Logo</a>
-        <ul>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a class="brand-logo" href="#">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-small-and-down">
           <li>
             <a href="#">Home</a>
           </li>
@@ -151,14 +151,14 @@
   <br>
 
   <!-- RESPONSIVE WITH SIDE MENU -->
-  <nav>
-    <div>
-      <div>
-        <a href="#">Logo</a>
-        <a href="#">
-          <i></i>
+  <nav class="blue ">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a class="brand-logo" href="#">Logo</a>
+        <a class="button-collapse" data-activates="mobile-nav" href="#">
+          <i class="material-icons">menu</i>
         </a>
-        <ul>
+        <ul class=" right hide-on-small-and-down">
           <li>
             <a href="#">Home</a>
           </li>
@@ -170,9 +170,9 @@
           </li>
 
           <!-- DROPDOWN TRIGGER -->
-          <li>
-            <a href="#!">Dropdown
-              <i></i>
+          <li >
+            <a class="dropdown-button right" data-activates="my-dropdown" href="#!">Dropdown
+              <i class="material-icons right">arrow_drop_down</i>
             </a>
           </li>
           <!-- BUTTON LINK -->
@@ -186,7 +186,8 @@
             </a>
           </li>
         </ul>
-        <ul>
+
+        <ul  class="side-nav" id="mobile-nav">
           <li>
             <a href="#">Home</a>
           </li>
@@ -202,7 +203,7 @@
   </nav>
 
   <!-- DROPDOWN MENU -->
-  <ul>
+  <ul class="dropdown-content"  id="my-dropdown">
     <li>
       <a href="#">Link 1</a>
     </li>
@@ -248,7 +249,7 @@
 
       // JAVASCRIPT START HERE //
 
-
+$('.button-collapse').sideNav();
 
 
     });
