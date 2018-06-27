@@ -12,16 +12,19 @@
 
   <title>Materialize Sandbox</title>
   <style>
+    html,body,.block{
+    height: 100%;
+    }
   </style>
 </head>
 
 <body>
-  <div>
-    <nav>
-      <div>
-        <div>
-          <a href="#">Blue</a>
-          <ul>
+  <div id="blue" class="block blue">
+    <nav class="pushpin-demo-nav" data-target="blue">
+      <div class="nav-wrapper light-blue">
+        <div class="container">
+          <a href="#" class="brand-logo">Blue</a>
+          <ul id="nav-mobile" class="right hide-on-med-down">
             <li>
               <a href="#!">Blue Link 1</a>
             </li>
@@ -37,48 +40,49 @@
     </nav>
   </div>
 
-  <div>
-    <nav>
-      <div>
-        <div>
-          <a href="#">Red</a>
-          <ul>
-            <li>
-              <a href="#!">Red Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Red Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Red Link 3</a>
-            </li>
-          </ul>
+  <div id="red" class="block red lighten-1">
+      <nav class="pushpin-demo-nav" data-target="red">
+        <div class="nav-wrapper blue">
+          <div class="container">
+            <a href="#" class="brand-logo">Blue</a>
+            <ul id="nav-mobile" class="right hide-on-med-down">
+              <li>
+                <a href="#!">blue Link 1</a>
+              </li>
+              <li>
+                <a href="#!">blue Link 2</a>
+              </li>
+              <li>
+                <a href="#!">blue Link 3</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
 
-  <div>
-    <nav>
-      <div>
-        <div>
-          <a href="#">Green</a>
-          <ul>
-            <li>
-              <a href="#!">Green Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Green Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Green Link 3</a>
-            </li>
-          </ul>
+
+
+  <div id="green" class="block green lighten-1">
+      <nav class="pushpin-demo-nav" data-target="green">
+        <div class="nav-wrapper green">
+          <div class="container">
+            <a href="#" class="brand-logo">Blue</a>
+            <ul id="nav-mobile" class="right hide-on-med-down">
+              <li>
+                <a href="#!">green Link 1</a>
+              </li>
+              <li>
+                <a href="#!">green Link 2</a>
+              </li>
+              <li>
+                <a href="#!">green Link 3</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
-
+      </nav>
+    </div>
 
 
 
