@@ -85,6 +85,52 @@
       </div>
     </div>
   </nav>
+
+  <!-- section Stats -->
+<section class="section section-stats center">
+  <div class="row">
+    <div class="col s12 m6 l3">
+      <div class="card-panel blue lighten-1 white-text center">
+        <i class="material-icons medium">insert_emoticon</i>
+        <h5>Monthly Visitor</h5>
+        <h3 class="count">2323</h3>
+        <div class="progress gray-lighten-1">
+          <div class="determinate white" style="width: 40%;"></div>
+        </div>
+      </div> 
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card-panel center">
+        <i class="material-icons medium">mode_edit</i>
+        <h5>Blog Post</h5>
+        <h3 class="count">104</h3>
+        <div class="progress gray-lighten-1">
+          <div class="determinate blue lighten-1" style="width: 40%;"></div>
+        </div>
+      </div> 
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card-panel blue lighten-1 white-text center">
+        <i class="material-icons medium">mode_comment</i>
+        <h5>Comments</h5>
+        <h3 class="count">323</h3>
+        <div class="progress gray-lighten-1">
+          <div class="determinate white" style="width: 40%;"></div>
+        </div>
+      </div> 
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card-panel center">
+        <i class="material-icons medium">supervisor_account</i>
+        <h5>users</h5>
+        <h3 class="count">350</h3>
+        <div class="progress gray-lighten-1">
+          <div class="determinate blue lighten-1" style="width: 40%;"></div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -92,6 +138,30 @@
     $(document).ready(function () {
       //Init Side nav
       $('.button-collapse').sideNav();
+
+      //counter
+      $(".count").each(function(){
+        $(this).prop('Counter',0).animate({
+          Counter:$(this).text()
+        },{
+          duration:1000,
+          easing :"swing",
+          step : function(now){
+            $(this).text(Math.ceil(now));
+          } 
+        })
+      })
+      $(".count").each(function(){
+        $(this).prop('Counter',0).animate({
+          Counter:$(this).text()
+        },{
+          duration:1000,
+          easing :"swing",
+          step : function(now){
+            $(this).text(Math.ceil(now));
+          } 
+        })
+      })
 
     });
   </script>
