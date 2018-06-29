@@ -135,7 +135,13 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-    $(document).ready(function () {
+    // hide section
+    $('.section').hide();
+    
+    setTimeout(function(){
+      $(document).ready(function () {
+        //show Sections
+        $('.section').fadeIn();
       //Init Side nav
       $('.button-collapse').sideNav();
 
@@ -164,6 +170,9 @@
       })
 
     });
+    },1000)
+
+    
   </script>
 </body>
 
