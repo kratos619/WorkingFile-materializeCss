@@ -131,6 +131,22 @@
     </div>
   </div>
 </section>
+
+<!-- section Visitors -->
+<section class="section section-visitors blue lighten-4">
+<div class="row">
+  <div class="col s12 m6 l8">
+    <div class="card-panel">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
+  </div>
+  <div class="col s12 m6 l4">
+    <!-- latest Comments -->
+
+  </div>
+</div>
+</section>
+
 <!-- preeloader -->
 <div class="loader preloader-wrapper big active">
     <div class="spinner-layer spinner-blue-only">
@@ -147,6 +163,8 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.js"></script>
+  <script type="text/javascript" src="js/chart.js"></script>
   <script>
     // hide section
     $('.section').hide();
@@ -189,7 +207,8 @@
     });
     },1000)
 
-    
+    //Chart data
+ 
   </script>
 </body>
 
